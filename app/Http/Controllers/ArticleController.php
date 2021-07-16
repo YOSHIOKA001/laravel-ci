@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Article;
 use App\Tag;
+use App\User;
 use App\Http\Requests\ArticleRequest;
 use Illuminate\Http\Request;
 
