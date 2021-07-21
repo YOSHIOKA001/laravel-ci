@@ -1,6 +1,9 @@
 <?php
 
 Auth::routes();
+
+// edit 7/19-01
+
 Route::prefix('login')->name('login.')->group(function () {
     Route::get('/{provider}', 'Auth\LoginController@redirectToProvider')->name('{provider}');
     Route::get('/{provider}/callback', 'Auth\LoginController@handleProviderCallback')->name('{provider}.callback');
