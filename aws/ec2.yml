@@ -40,7 +40,7 @@ Resources:
       CidrBlock: !Ref PublicSubnetCidrBlock
       MapPublicIpOnLaunch: true
       VpcId: !Ref VPC
-      AvailabilityZone: ap-northeast-3a
+      AvailabilityZone: ap-northeast-1a
       Tags:
         - Key: Name
           Value: !Sub ${AWS::StackName}-public-subnet
@@ -50,7 +50,7 @@ Resources:
       CidrBlock: !Ref PrivateSubnet01CidrBlock
       MapPublicIpOnLaunch: false
       VpcId: !Ref VPC
-      AvailabilityZone: ap-northeast-3a
+      AvailabilityZone: ap-northeast-1a
       Tags:
         - Key: Name
           Value: !Sub ${AWS::StackName}-private-subnet-01
@@ -60,7 +60,7 @@ Resources:
       CidrBlock: !Ref PrivateSubnet02CidrBlock
       MapPublicIpOnLaunch: false
       VpcId: !Ref VPC
-      AvailabilityZone: ap-northeast-3c
+      AvailabilityZone: ap-northeast-1c
       Tags:
         - Key: Name
           Value: !Sub ${AWS::StackName}-private-subnet-02
